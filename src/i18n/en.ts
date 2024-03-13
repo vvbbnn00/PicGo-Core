@@ -98,6 +98,18 @@ export const EN: ILocales = {
   PICBED_UPYUN_MESSAGE_OPTIONS: 'Ex. !imgslim',
   PICBED_UPYUN_MESSAGE_PATH: 'Ex. test/',
 
+  // goflet
+  PICBED_GOFLET: 'Goflet',
+  PICBED_GOFLET_JWT_ALGORITHM: 'Set JWT Algorithm',
+  PICBED_GOFLET_JWT_SECRET: 'Set JWT Secret',
+  PICBED_GOFLET_JWT_ISSUER: 'Set JWT Issuer',
+  PICBED_GOFLET_ENDPOINT: 'Set Endpoint',
+  PICBED_GOFLET_MESSAGE_ENDPOINT: 'Ex. https://goflet.com',
+  PICBED_GOFLET_PATH: 'Set Path',
+  PICBED_GOFLET_MESSAGE_PATH: 'Ex. test/',
+  PICBED_GOFLET_OPTIONS: 'Set URL Suffix',
+  PICBED_GOFLET_MESSAGE_OPTIONS: 'Ex. ?h=64&w=64',
+
   // Plugin Handler
   PLUGIN_HANDLER_PLUGIN_INSTALL_SUCCESS: 'Plugin installed successfully',
   PLUGIN_HANDLER_PLUGIN_INSTALL_FAILED: 'Plugin installation failed',

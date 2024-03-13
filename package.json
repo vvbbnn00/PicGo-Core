@@ -95,6 +95,7 @@
   "dependencies": {
     "@picgo/i18n": "^1.0.0",
     "@picgo/store": "^2.0.2",
+    "@types/jsonwebtoken": "^9.0.6",
     "axios": "^0.27.2",
     "chalk": "^2.4.1",
     "commander": "^8.1.0",
@@ -109,6 +110,7 @@
     "inquirer": "^6.0.0",
     "is-wsl": "^2.2.0",
     "js-yaml": "^4.1.0",
+    "jsonwebtoken": "^9.0.2",
     "lodash": "^4.17.21",
     "md5": "^2.2.1",
     "mime-types": "2.1.33",
@@ -117,6 +119,7 @@
     "qiniu": "^7.2.1",
     "resolve": "^1.8.1",
     "rimraf": "^3.0.2",
+    "tslib": "2.3.1",
     "tunnel": "^0.0.6"
   },
   "repository": {

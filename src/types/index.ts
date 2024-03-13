@@ -262,6 +262,7 @@ export interface IImgInfo {
   height?: number
   extname?: string
   imgUrl?: string
+
   [propName: string]: any
 }
 
@@ -282,6 +283,7 @@ export interface ISmmsConfig {
   token: string
   backupDomain?: string
 }
+
 /** 七牛云图床配置项 */
 export interface IQiniuConfig {
   accessKey: string
@@ -297,6 +299,7 @@ export interface IQiniuConfig {
   /** 自定义存储路径，比如 `img/` */
   path: string
 }
+
 /** 又拍云图床配置项 */
 export interface IUpyunConfig {
   /** 存储空间名，及你的服务名 */
@@ -312,6 +315,7 @@ export interface IUpyunConfig {
   /** 加速域名，注意要加 `http://` 或者 `https://` */
   url: string
 }
+
 /** 腾讯云图床配置项 */
 export interface ITcyunConfig {
   secretId: string
@@ -334,6 +338,7 @@ export interface ITcyunConfig {
   /** 是否支持极智压缩 */
   slim: boolean
 }
+
 /** GitHub 图床配置项 */
 export interface IGithubConfig {
   /** 仓库名，格式是 `username/reponame` */
@@ -347,6 +352,7 @@ export interface IGithubConfig {
   /** 分支名，默认是 `main` */
   branch: string
 }
+
 /** 阿里云图床配置项 */
 export interface IAliyunConfig {
   accessKeyId: string
@@ -362,6 +368,7 @@ export interface IAliyunConfig {
   /** 针对图片的一些后缀处理参数 PicGo 2.2.0+ PicGo-Core 1.4.0+ */
   options: string
 }
+
 /** Imgur 图床配置项 */
 export interface IImgurConfig {
   /** imgur 的 `clientId` */
@@ -369,6 +376,22 @@ export interface IImgurConfig {
   /** 代理地址，仅支持 http 代理 */
   proxy: string
 }
+
+export interface IGofletConfig {
+  /** JWT 密钥算法 */
+  jwtAlgorithm: string
+  /** JWT 密钥 */
+  jwtSecret: string
+  /** JWT 发行者 */
+  jwtIssuer: string
+  /** 保存图片的路径 */
+  path: string
+  /** API 服务器地址 */
+  endpoint: string
+  /** 默认图像处理参数 */
+  defaultOptions: string
+}
+
 /** PicGo 配置文件类型定义 */
 export interface IConfig {
   picBed: {
@@ -400,6 +423,7 @@ export interface IConfig {
     npmProxy?: string
     [others: string]: any
   }
+
   [configOptions: string]: any
 }
 
@@ -412,6 +436,7 @@ export interface IPlugin {
   name?: string
   /** The config of this handler */
   config?: (ctx: IPicGo) => IPluginConfig[]
+
   [propName: string]: any
 }
 
